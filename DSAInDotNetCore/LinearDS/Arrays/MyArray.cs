@@ -12,6 +12,7 @@ namespace LinearDS.Arrays
             _arr = new T[length];
         }
 
+        //Run-time Complexity = O(n)
         public void Insert(T item)
         {
             if (_arr.Length == _count)
@@ -27,6 +28,7 @@ namespace LinearDS.Arrays
             _arr[_count++] = item;
         }
 
+        //Run-time Complexity = O(n)
         public void Print()
         {
             for (var i = 0; i < _count; i++)
@@ -35,6 +37,7 @@ namespace LinearDS.Arrays
             }
         }
 
+        //Run-time Complexity = O(n)
         public void RemoveAt(int index)
         {
             if (index < 0 || index >= _count)
@@ -48,6 +51,7 @@ namespace LinearDS.Arrays
             _count--;
         }
 
+        //Run-time Complexity = O(n)
         public int IndexOf(T item)
         {
             var index = -1;
