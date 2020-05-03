@@ -1,0 +1,11 @@
+D:\Kasinath\My Workouts\Practice\DotNetCore\DSA\DSAInDotNetCore\DSAInDotNetCore\LinearDS\bin\Debug\netcoreapp3.1\LinearDS.exe
+D:\Kasinath\My Workouts\Practice\DotNetCore\DSA\DSAInDotNetCore\DSAInDotNetCore\LinearDS\bin\Debug\netcoreapp3.1\LinearDS.deps.json
+D:\Kasinath\My Workouts\Practice\DotNetCore\DSA\DSAInDotNetCore\DSAInDotNetCore\LinearDS\bin\Debug\netcoreapp3.1\LinearDS.runtimeconfig.json
+D:\Kasinath\My Workouts\Practice\DotNetCore\DSA\DSAInDotNetCore\DSAInDotNetCore\LinearDS\bin\Debug\netcoreapp3.1\LinearDS.runtimeconfig.dev.json
+D:\Kasinath\My Workouts\Practice\DotNetCore\DSA\DSAInDotNetCore\DSAInDotNetCore\LinearDS\bin\Debug\netcoreapp3.1\LinearDS.dll
+D:\Kasinath\My Workouts\Practice\DotNetCore\DSA\DSAInDotNetCore\DSAInDotNetCore\LinearDS\bin\Debug\netcoreapp3.1\LinearDS.pdb
+D:\Kasinath\My Workouts\Practice\DotNetCore\DSA\DSAInDotNetCore\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.csprojAssemblyReference.cache
+D:\Kasinath\My Workouts\Practice\DotNetCore\DSA\DSAInDotNetCore\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.AssemblyInfoInputs.cache
+D:\Kasinath\My Workouts\Practice\DotNetCore\DSA\DSAInDotNetCore\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.AssemblyInfo.cs
+D:\Kasinath\My Workouts\Practice\DotNetCore\DSA\DSAInDotNetCore\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.dll
+D:\Kasinath\My Workouts\Practice\DotNetCore\DSA\DSAInDotNetCore\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.pdb
