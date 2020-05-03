@@ -4,6 +4,7 @@ namespace LinearDS.Arrays
 {
     public static class ArraysDemo
     {
+        //Run-time Complexity = O(n)
         public static void Print(this Array arr)
         {
             foreach (var item in arr)
@@ -12,6 +13,7 @@ namespace LinearDS.Arrays
             }
         }
 
+        //Run-time Complexity = O(n)
         public static Array Insert(this Array arr, int item)
         {
             var arrNew = new int[arr.Length + 1];
