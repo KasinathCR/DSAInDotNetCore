@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xUErmm2qLzc/61sb/QLmUxM79r3AfOZUluHRDk+eWaGJTPi/CDK4kyVox5pEMRA1earm/C+hN3RLUwT0sdSeZg==",
+  "dgSpecHash": "pcUjrCP8feM4/JbwYElIl7GgyTryfV6wlqk7DBJlFia5CzOr7QoXYovrxYnZSe3otnRZ4pQb6I2jDC49j1V1Ig==",
   "success": true,
   "projectFilePath": "D:\\Kasinath\\My Workouts\\Practice\\DotNetCore\\DSA\\DSAInDotNetCore\\DSAInDotNetCore\\LinearDS\\LinearDS.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\crkas\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
   "logs": []
 }
