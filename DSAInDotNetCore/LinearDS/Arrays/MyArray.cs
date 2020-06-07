@@ -41,7 +41,7 @@ namespace LinearDS.Arrays
         public void RemoveAt(int index)
         {
             if (index < 0 || index >= _count)
-                throw new ArgumentException();
+                throw new ArgumentOutOfRangeException();
 
             for (var i = index; i < _count - 1; i++)
             {
