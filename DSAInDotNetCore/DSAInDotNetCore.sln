@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearDS", "LinearDS\LinearDS.csproj", "{A989ED28-F3E7-4E11-9A66-D97913D2AC08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinearDS", "LinearDS\LinearDS.csproj", "{A989ED28-F3E7-4E11-9A66-D97913D2AC08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C13D5C91-22FB-4BCA-9DD1-6E03174BFDE4}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
