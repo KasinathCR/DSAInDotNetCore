@@ -1,4 +1,5 @@
-﻿namespace LinearDS.LinkedLists
+﻿#pragma warning disable 693
+namespace LinearDS.LinkedLists
 {
     using System;
 
@@ -28,21 +29,21 @@
 
         public void AddHead(T value)
         {
-            MyNode<T> node = new MyNode<T>(value);
+            var node = new MyNode<T>(value);
 
-            if (IsEmpty())
-                _head = _tail = node;
+            if (this.IsEmpty()) this._head = _tail = node;
             else
             {
                 node._address = _head;
                 _head = node;
             }
+
             _size++;
         }
 
         public void AddTail(T value)
         {
-            MyNode<T> node = new MyNode<T>(value);
+            var node = new MyNode<T>(value);
 
             if (IsEmpty())
                 _head = _tail = node;
@@ -51,6 +52,7 @@
                 _tail._address = node;
                 _tail = node;
             }
+
             _size++;
         }
 
@@ -90,6 +92,7 @@
                 _head = current._address;
                 current._address = null;
             }
+
             _size--;
         }
 
@@ -101,10 +104,11 @@
                 _head = _tail = null;
             else
             {
-                var prev = GetPreviousToLast(_tail);
+                var prev = this.GetPreviousToLast();
                 _tail = prev;
                 prev._address = null;
             }
+
             _size--;
         }
 
@@ -115,14 +119,15 @@
 
         public T[] ToArray()
         {
-            T[] arr = new T[_size];
+            var arr = new T[_size];
             var current = _head;
-            int index = 0;
+            var index = 0;
             while (current != null)
             {
                 arr[index++] = current._value;
                 current = current._address;
             }
+
             return arr;
         }
 
@@ -155,7 +160,7 @@
             var first = _head;
             var second = _head;
 
-            for (int i = 0; i < k - 1; i++)
+            for (var i = 0; i < k - 1; i++)
             {
                 second = second._address;
                 if (second == null)
@@ -169,12 +174,11 @@
             }
 
             return first._value;
-
         }
 
-        private MyNode<T> GetPreviousToLast(MyNode<T> node)
+        private MyNode<T> GetPreviousToLast()
         {
-            MyNode<T> current = _head;
+            var current = _head;
 
             while (current != null)
             {
