@@ -1,10 +1,8 @@
-﻿using System;
-using System.Linq;
-using LinearDS.Arrays;
-using LinearDS.LinkedLists;
-
-namespace LinearDS
+﻿namespace LinearDS
 {
+    using System;
+    using LinearDS.LinkedLists;
+
     internal static class Program
     {
         private static void Main()
@@ -35,8 +33,7 @@ namespace LinearDS
 
             #region LinkedLists
 
-            MyLinkedList<int> list = new MyLinkedList<int>();
-            //list.RemoveHead();
+            /*var list = new MyLinkedList<int>();
             list.AddTail(10);
             list.AddTail(20);
             list.AddTail(30);
@@ -51,18 +48,25 @@ namespace LinearDS
             Console.WriteLine($"The Size of LinkedList is {list.Size()}");
             var linkedListItems = list.ToArray();
             Console.WriteLine("The Items in the Linked List are:");
-            Array.ForEach(linkedListItems, item =>
-            {
-                Console.WriteLine(item);
-            });
+            Array.ForEach(
+                linkedListItems,
+                Console.WriteLine);
             list.Reverse();
             linkedListItems = list.ToArray();
             Console.WriteLine("The Items in the Reversed Linked List are:");
-            Array.ForEach(linkedListItems, item =>
-            {
-                Console.WriteLine(item);
-            });
-            Console.WriteLine(list.FindKthItemFromTail(0));
+            Array.ForEach(
+                linkedListItems,
+                Console.WriteLine);
+            Console.WriteLine(list.FindKthItemFromTail(0));*/
+
+            #endregion
+
+            #region DoublyLinkedList
+
+            var doublyLinkedList = new MyDoublyLinkedList<int>();
+            doublyLinkedList.AddHead(10);
+            doublyLinkedList.AddHead(20);
+            doublyLinkedList.AddTail(30);
 
             #endregion
         }
