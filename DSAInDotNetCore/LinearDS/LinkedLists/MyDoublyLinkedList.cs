@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿#pragma warning disable 693
 #pragma warning disable 649
 
 namespace LinearDS.LinkedLists
 {
+    using System;
+
     public class MyDoublyLinkedList<T>
     {
         #region Node
@@ -158,9 +158,34 @@ namespace LinearDS.LinkedLists
                 previous = current;
                 current = next;
             }
+
             this._tail = this._head;
             this._head = previous;
             this._head._previous = null;
+        }
+
+        public T FindKthElementFromTail(int k)
+        {
+            if (this.IsEmpty())
+                throw new InvalidOperationException();
+
+            var first = this._head;
+            var second = this._head;
+
+            for (var i = 0; i < k - 1; i++)
+            {
+                second = second._next;
+                if (second == null)
+                    throw new InvalidOperationException();
+            }
+
+            while (second != this._tail)
+            {
+                first = first._next;
+                second = second._next;
+            }
+
+            return first._value;
         }
 
         private bool IsEmpty()

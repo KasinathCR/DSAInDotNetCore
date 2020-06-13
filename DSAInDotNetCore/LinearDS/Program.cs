@@ -4,6 +4,7 @@
     using System.Linq;
 
     using LinearDS.LinkedLists;
+    using LinearDS.Stacks;
 
     internal static class Program
     {
@@ -63,7 +64,7 @@
 
             #endregion
 
-            #region DoublyLinkedList
+            #region DoublyLinkedLists
 
             var doublyLinkedList = new MyDoublyLinkedList<int>();
             doublyLinkedList.AddHead(10);
@@ -84,12 +85,24 @@
                 Console.WriteLine(item);
             }
 
+            Console.WriteLine($"The 3rd Element from Tail is {doublyLinkedList.FindKthElementFromTail(3)}");
             doublyLinkedList.RemoveHead();
             Console.WriteLine($"The index of 30 is {doublyLinkedList.IndexOf(30)}");
             doublyLinkedList.RemoveHead();
             Console.WriteLine($"DoublyLinkedList contains 20? {doublyLinkedList.Contains(20)}");
             doublyLinkedList.RemoveTail();
             Console.WriteLine($"The Size of the Doubly Linked list is {doublyLinkedList.Size()}");
+
+            #endregion
+
+            #region Stacks
+
+            var input = "Kasinath";
+            var str = new StringReverser();
+            Console.WriteLine($"The Reverse of {input} is {str.ReverseString(input)}");
+            input = "((1 + 2)";
+            var expression = new ExpressionBalancer();
+            Console.WriteLine($"The balance of expression {input} is {expression.IsExpressionBalanced(input)}");
 
             #endregion
         }
