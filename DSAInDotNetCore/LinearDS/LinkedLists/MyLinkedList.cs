@@ -186,8 +186,8 @@ namespace LinearDS.LinkedLists
                 {
                     return current;
                 }
-                else
-                    current = current._address;
+
+                current = current._address;
             }
 
             return null;

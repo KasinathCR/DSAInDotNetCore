@@ -1,6 +1,8 @@
 ﻿namespace LinearDS
 {
     using System;
+    using System.Linq;
+
     using LinearDS.LinkedLists;
 
     internal static class Program
@@ -67,6 +69,27 @@
             doublyLinkedList.AddHead(10);
             doublyLinkedList.AddHead(20);
             doublyLinkedList.AddTail(30);
+            var listArray = doublyLinkedList.ToArray();
+            Console.WriteLine("The Items in the Doubly Linked List are:");
+            foreach (var item in listArray.AsParallel())
+            {
+                Console.WriteLine(item);
+            }
+
+            doublyLinkedList.Reverse();
+            listArray = doublyLinkedList.ToArray();
+            Console.WriteLine("The Items in the Reversed Doubly Linked List are:");
+            foreach (var item in listArray.AsParallel())
+            {
+                Console.WriteLine(item);
+            }
+
+            doublyLinkedList.RemoveHead();
+            Console.WriteLine($"The index of 30 is {doublyLinkedList.IndexOf(30)}");
+            doublyLinkedList.RemoveHead();
+            Console.WriteLine($"DoublyLinkedList contains 20? {doublyLinkedList.Contains(20)}");
+            doublyLinkedList.RemoveTail();
+            Console.WriteLine($"The Size of the Doubly Linked list is {doublyLinkedList.Size()}");
 
             #endregion
         }
