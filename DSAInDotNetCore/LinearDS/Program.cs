@@ -94,7 +94,7 @@
 
             #region Stacks
 
-            var input = "Kasinath";
+            /*var input = "Kasinath";
             var str = new StringReverser();
             Console.WriteLine($"The Reverse of {input} is {str.ReverseString(input)}");
             input = "((1 + 2)";
@@ -106,7 +106,16 @@
             stack.Push(20);
             Console.WriteLine($"The Stack is {stack}");
             Console.WriteLine(stack.Pop());
-            Console.WriteLine(stack.Peek());
+            Console.WriteLine(stack.Peek());*/
+
+            var stackLinkedList = new StackWithLinkedList<int>();
+            Console.WriteLine($"The Stack elements are: {stackLinkedList}");
+            stackLinkedList.Push(10);
+            stackLinkedList.Push(20);
+            Console.WriteLine($"The Stack elements are: {stackLinkedList}");
+            Console.WriteLine($"The Popped element from the stack is: {stackLinkedList.Pop()}");
+            Console.WriteLine($"The First element from the stack is: {stackLinkedList.Peek()}");
+            Console.WriteLine($"The Stack elements are: {stackLinkedList}");
 
             #endregion
         }
