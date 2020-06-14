@@ -1,9 +1,6 @@
 ﻿namespace LinearDS
 {
     using System;
-    using System.Linq;
-
-    using LinearDS.LinkedLists;
     using LinearDS.Stacks;
 
     internal static class Program
@@ -66,7 +63,7 @@
 
             #region DoublyLinkedLists
 
-            var doublyLinkedList = new MyDoublyLinkedList<int>();
+            /*var doublyLinkedList = new MyDoublyLinkedList<int>();
             doublyLinkedList.AddHead(10);
             doublyLinkedList.AddHead(20);
             doublyLinkedList.AddTail(30);
@@ -91,7 +88,7 @@
             doublyLinkedList.RemoveHead();
             Console.WriteLine($"DoublyLinkedList contains 20? {doublyLinkedList.Contains(20)}");
             doublyLinkedList.RemoveTail();
-            Console.WriteLine($"The Size of the Doubly Linked list is {doublyLinkedList.Size()}");
+            Console.WriteLine($"The Size of the Doubly Linked list is {doublyLinkedList.Size()}");*/
 
             #endregion
 
@@ -103,6 +100,13 @@
             input = "((1 + 2)";
             var expression = new ExpressionBalancer();
             Console.WriteLine($"The balance of expression {input} is {expression.IsExpressionBalanced(input)}");
+
+            var stack = new StackWithArrays<int>();
+            stack.Push(10);
+            stack.Push(20);
+            Console.WriteLine($"The Stack is {stack}");
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Peek());
 
             #endregion
         }
