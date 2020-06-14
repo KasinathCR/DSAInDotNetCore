@@ -17,7 +17,6 @@ C:\Users\crkas\source\repos\DSAInDotNetCore\DSAInDotNetCore\LinearDS\bin\Debug\n
 C:\Users\crkas\source\repos\DSAInDotNetCore\DSAInDotNetCore\LinearDS\bin\Debug\netcoreapp3.1\LinearDS.runtimeconfig.dev.json
 C:\Users\crkas\source\repos\DSAInDotNetCore\DSAInDotNetCore\LinearDS\bin\Debug\netcoreapp3.1\LinearDS.dll
 C:\Users\crkas\source\repos\DSAInDotNetCore\DSAInDotNetCore\LinearDS\bin\Debug\netcoreapp3.1\LinearDS.pdb
-C:\Users\crkas\source\repos\DSAInDotNetCore\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.csprojAssemblyReference.cache
 C:\Users\crkas\source\repos\DSAInDotNetCore\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.AssemblyInfoInputs.cache
 C:\Users\crkas\source\repos\DSAInDotNetCore\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.AssemblyInfo.cs
 C:\Users\crkas\source\repos\DSAInDotNetCore\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.csproj.CoreCompileInputs.cache
