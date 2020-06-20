@@ -111,7 +111,7 @@ namespace LinearDS
             stack.Push(20);
             Console.WriteLine($"The Stack is {stack}");
             Console.WriteLine(stack.Pop());
-            Console.WriteLine(stack.Peek());*/
+            Console.WriteLine(stack.Peek());
 
             var stackLinkedList = new StackWithLinkedList<int>();
             Console.WriteLine($"The Stack elements are: {stackLinkedList}");
@@ -120,20 +120,40 @@ namespace LinearDS
             Console.WriteLine($"The Stack elements are: {stackLinkedList}");
             Console.WriteLine($"The Popped element from the stack is: {stackLinkedList.Pop()}");
             Console.WriteLine($"The First element from the stack is: {stackLinkedList.Peek()}");
-            Console.WriteLine($"The Stack elements are: {stackLinkedList}");
+            Console.WriteLine($"The Stack elements are: {stackLinkedList}");*/
 
             #endregion
 
             #region Queues
 
-            Queue<int> queue = new Queue<int>();
+            /*Queue<int> queue = new Queue<int>();
             queue.Enqueue(10);
             queue.Enqueue(20);
             queue.Enqueue(30);
             Console.WriteLine("The contents of queue are:");
             queue.AsParallel().ForEach(Console.WriteLine);
             QueueReverser<int> queueReverser = new QueueReverser<int>();
-            queueReverser.ReverseQueue(queue);
+            queueReverser.ReverseQueue(queue);*/
+
+            var arrayQueue = new ArrayQueue<int>(5);
+            arrayQueue.Enqueue(10);
+            arrayQueue.Enqueue(20);
+            arrayQueue.Enqueue(30);
+            arrayQueue.Enqueue(40);
+            arrayQueue.Enqueue(50);
+            Console.WriteLine(arrayQueue);
+            arrayQueue.Enqueue(60);
+            arrayQueue.Peek();
+            arrayQueue.Dequeue();
+            arrayQueue.Dequeue();
+            arrayQueue.Enqueue(10);
+            arrayQueue.Enqueue(20);
+            arrayQueue.Dequeue();
+            arrayQueue.Dequeue();
+            arrayQueue.Dequeue();
+            arrayQueue.Dequeue();
+            arrayQueue.Dequeue();
+            arrayQueue.Dequeue();
 
             #endregion
         }
