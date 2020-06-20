@@ -133,7 +133,7 @@ namespace LinearDS
             Console.WriteLine("The contents of queue are:");
             queue.AsParallel().ForEach(Console.WriteLine);
             QueueReverser<int> queueReverser = new QueueReverser<int>();
-            queueReverser.ReverseQueue(queue);*/
+            queueReverser.ReverseQueue(queue);
 
             var arrayQueue = new ArrayQueue<int>(5);
             arrayQueue.Enqueue(10);
@@ -153,7 +153,23 @@ namespace LinearDS
             arrayQueue.Dequeue();
             arrayQueue.Dequeue();
             arrayQueue.Dequeue();
-            arrayQueue.Dequeue();
+            arrayQueue.Dequeue();*/
+
+            var stackQueue = new StackQueue<int>(5);
+            stackQueue.Enqueue(10);
+            stackQueue.Enqueue(20);
+            stackQueue.Enqueue(30);
+            stackQueue.Enqueue(40);
+            stackQueue.Enqueue(50);
+            stackQueue.Enqueue(60);
+            stackQueue.Dequeue();
+            stackQueue.Dequeue();
+            Console.WriteLine(stackQueue);
+            stackQueue.Dequeue();
+            stackQueue.Dequeue();
+            stackQueue.Peek();
+            stackQueue.Dequeue();
+            stackQueue.Dequeue();
 
             #endregion
         }
