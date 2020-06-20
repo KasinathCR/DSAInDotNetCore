@@ -1,4 +1,9 @@
-﻿namespace LinearDS
+﻿using System.Collections.Generic;
+using System.Linq;
+using LinearDS.Queues;
+using MoreLinq.Extensions;
+
+namespace LinearDS
 {
     using System;
     using LinearDS.Stacks;
@@ -116,6 +121,19 @@
             Console.WriteLine($"The Popped element from the stack is: {stackLinkedList.Pop()}");
             Console.WriteLine($"The First element from the stack is: {stackLinkedList.Peek()}");
             Console.WriteLine($"The Stack elements are: {stackLinkedList}");
+
+            #endregion
+
+            #region Queues
+
+            Queue<int> queue = new Queue<int>();
+            queue.Enqueue(10);
+            queue.Enqueue(20);
+            queue.Enqueue(30);
+            Console.WriteLine("The contents of queue are:");
+            queue.AsParallel().ForEach(Console.WriteLine);
+            QueueReverser<int> queueReverser = new QueueReverser<int>();
+            queueReverser.ReverseQueue(queue);
 
             #endregion
         }

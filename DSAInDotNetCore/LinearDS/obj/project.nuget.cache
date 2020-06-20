@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aPxJIAExrLAO3K5Jj+V70lBkuAU8twKS1ghnu1T6vNIAevaX4G4vjfW5XGaJbF+dGKlezG31Ma9zaFekpis2LA==",
+  "dgSpecHash": "+wWuDN99QpCSjzDaupREqIJ+7KFuGD0l9v3HhOWd0nWKUx0put4JFypDI2FITYZdFU9Gv3k7Gfn3A5Tck4v8uQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\crkas\\source\\repos\\DSAInDotNetCore\\DSAInDotNetCore\\LinearDS\\LinearDS.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Kasinath\\My Workouts\\Practice\\DotNetCore\\DSA\\DSAInDotNetCore\\LinearDS\\LinearDS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\crkas\\.nuget\\packages\\morelinq\\3.3.2\\morelinq.3.3.2.nupkg.sha512"
+  ],
   "logs": []
 }
