@@ -5,19 +5,19 @@
 
     public class StackWithLinkedList<T>
     {
-        private class MyNode<S>
+        private class MyNode<TS>
         {
-            public readonly S _value;
+            public readonly TS Value;
 
-            public MyNode<S> _next;
+            public MyNode<TS> Next;
 
-            public MyNode(S value)
+            public MyNode(TS value)
             {
-                this._value = value;
+                this.Value = value;
             }
         }
 
-        private const int _length = 5;
+        private const int Length = 5;
 
         private MyNode<T> _top;
 
@@ -25,7 +25,7 @@
 
         public void Push(T item)
         {
-            if (this._count == _length)
+            if (this._count == Length)
                 throw new StackOverflowException();
 
             var node = new MyNode<T>(item);
@@ -34,7 +34,7 @@
                 this._top = node;
             else
             {
-                node._next = this._top;
+                node.Next = this._top;
                 this._top = node;
             }
 
@@ -46,13 +46,13 @@
             if (this.IsEmpty())
                 throw new InvalidOperationException();
 
-            var value = this._top._value;
+            var value = this._top.Value;
             if (this._count == 1)
                 this._top = null;
             else
             {
-                var node = this._top._next;
-                this._top._next = null;
+                var node = this._top.Next;
+                this._top.Next = null;
                 this._top = node;
             }
 
@@ -66,10 +66,10 @@
             if (this.IsEmpty())
                 throw new InvalidOperationException();
 
-            return this._top._value;
+            return this._top.Value;
         }
 
-        public bool IsEmpty()
+        private bool IsEmpty()
         {
             return this._top == null;
         }
@@ -84,9 +84,9 @@
 
             while (node != null)
             {
-                str.Append(node._value);
+                str.Append(node.Value);
                 str.Append(" ");
-                node = node._next;
+                node = node.Next;
             }
 
             return str.ToString();
