@@ -39,3 +39,18 @@ D:\Kasinath\My Workouts\Practice\DotNetCore\DSA\DSAInDotNetCore\LinearDS\obj\Deb
 D:\Kasinath\My Workouts\Practice\DotNetCore\DSA\DSAInDotNetCore\LinearDS\bin\Debug\netcoreapp3.1\MoreLinq.dll
 D:\Kasinath\My Workouts\Practice\DotNetCore\DSA\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.csproj.CoreCompileInputs.cache
 D:\Kasinath\My Workouts\Practice\DotNetCore\DSA\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.csproj.CopyComplete
+C:\Users\crkas\RiderProjects\DSAInDotNetCore\DSAInDotNetCore\LinearDS\bin\Debug\netcoreapp3.1\LinearDS.exe
+C:\Users\crkas\RiderProjects\DSAInDotNetCore\DSAInDotNetCore\LinearDS\bin\Debug\netcoreapp3.1\LinearDS.deps.json
+C:\Users\crkas\RiderProjects\DSAInDotNetCore\DSAInDotNetCore\LinearDS\bin\Debug\netcoreapp3.1\LinearDS.runtimeconfig.json
+C:\Users\crkas\RiderProjects\DSAInDotNetCore\DSAInDotNetCore\LinearDS\bin\Debug\netcoreapp3.1\LinearDS.runtimeconfig.dev.json
+C:\Users\crkas\RiderProjects\DSAInDotNetCore\DSAInDotNetCore\LinearDS\bin\Debug\netcoreapp3.1\LinearDS.dll
+C:\Users\crkas\RiderProjects\DSAInDotNetCore\DSAInDotNetCore\LinearDS\bin\Debug\netcoreapp3.1\LinearDS.pdb
+C:\Users\crkas\RiderProjects\DSAInDotNetCore\DSAInDotNetCore\LinearDS\bin\Debug\netcoreapp3.1\MoreLinq.dll
+C:\Users\crkas\RiderProjects\DSAInDotNetCore\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.csprojAssemblyReference.cache
+C:\Users\crkas\RiderProjects\DSAInDotNetCore\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.AssemblyInfoInputs.cache
+C:\Users\crkas\RiderProjects\DSAInDotNetCore\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.AssemblyInfo.cs
+C:\Users\crkas\RiderProjects\DSAInDotNetCore\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.csproj.CoreCompileInputs.cache
+C:\Users\crkas\RiderProjects\DSAInDotNetCore\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.csproj.CopyComplete
+C:\Users\crkas\RiderProjects\DSAInDotNetCore\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.dll
+C:\Users\crkas\RiderProjects\DSAInDotNetCore\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.pdb
+C:\Users\crkas\RiderProjects\DSAInDotNetCore\DSAInDotNetCore\LinearDS\obj\Debug\netcoreapp3.1\LinearDS.genruntimeconfig.cache
