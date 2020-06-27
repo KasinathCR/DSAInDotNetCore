@@ -155,7 +155,7 @@ namespace LinearDS
             arrayQueue.Dequeue();
             arrayQueue.Dequeue();*/
 
-            var stackQueue = new StackQueue<int>(5);
+            /*var stackQueue = new StackQueue<int>(5);
             stackQueue.Enqueue(10);
             stackQueue.Enqueue(20);
             stackQueue.Enqueue(30);
@@ -169,7 +169,15 @@ namespace LinearDS
             stackQueue.Dequeue();
             stackQueue.Peek();
             stackQueue.Dequeue();
-            stackQueue.Dequeue();
+            stackQueue.Dequeue();*/
+
+            var queue = new PriorityQueueWithArray(5);
+            queue.Enqueue(1);
+            queue.Enqueue(3);
+            queue.Enqueue(5);
+            queue.Enqueue(7);
+            queue.Enqueue(2);
+            Console.WriteLine(queue);
 
             #endregion
         }

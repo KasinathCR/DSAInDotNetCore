@@ -43,23 +43,24 @@
   },
   "packageFolders": {
     "C:\\Users\\crkas\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Microsoft\\Xamarin\\NuGet": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Kasinath\\My Workouts\\Practice\\DotNetCore\\DSA\\DSAInDotNetCore\\LinearDS\\LinearDS.csproj",
+      "projectUniqueName": "C:\\Users\\crkas\\RiderProjects\\DSAInDotNetCore\\DSAInDotNetCore\\LinearDS\\LinearDS.csproj",
       "projectName": "LinearDS",
-      "projectPath": "D:\\Kasinath\\My Workouts\\Practice\\DotNetCore\\DSA\\DSAInDotNetCore\\LinearDS\\LinearDS.csproj",
+      "projectPath": "C:\\Users\\crkas\\RiderProjects\\DSAInDotNetCore\\DSAInDotNetCore\\LinearDS\\LinearDS.csproj",
       "packagesPath": "C:\\Users\\crkas\\.nuget\\packages\\",
-      "outputPath": "D:\\Kasinath\\My Workouts\\Practice\\DotNetCore\\DSA\\DSAInDotNetCore\\LinearDS\\obj\\",
+      "outputPath": "C:\\Users\\crkas\\RiderProjects\\DSAInDotNetCore\\DSAInDotNetCore\\LinearDS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet"
       ],
       "configFilePaths": [
         "C:\\Users\\crkas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
