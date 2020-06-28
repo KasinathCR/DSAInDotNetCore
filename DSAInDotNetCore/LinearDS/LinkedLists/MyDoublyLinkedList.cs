@@ -11,15 +11,15 @@ namespace LinearDS.LinkedLists
 
         private class MyNode<T>
         {
-            public T _value;
+            public T Value;
 
-            public MyNode<T> _previous;
+            public MyNode<T> Previous;
 
-            public MyNode<T> _next;
+            public MyNode<T> Next;
 
             public MyNode(T value)
             {
-                this._value = value;
+                this.Value = value;
             }
         }
 
@@ -29,7 +29,7 @@ namespace LinearDS.LinkedLists
 
         private MyNode<T> _tail;
 
-        private int size;
+        private int _size;
 
         public void AddHead(T value)
         {
@@ -39,13 +39,13 @@ namespace LinearDS.LinkedLists
                 this._head = this._tail = node;
             else
             {
-                node._next = this._head;
-                node._previous = null;
-                this._head._previous = node;
+                node.Next = this._head;
+                node.Previous = null;
+                this._head.Previous = node;
                 this._head = node;
             }
 
-            this.size++;
+            this._size++;
         }
 
         public void AddTail(T value)
@@ -56,13 +56,13 @@ namespace LinearDS.LinkedLists
                 this._head = this._tail = node;
             else
             {
-                node._next = null;
-                node._previous = this._tail;
-                this._tail._next = node;
+                node.Next = null;
+                node.Previous = this._tail;
+                this._tail.Next = node;
                 this._tail = node;
             }
 
-            this.size++;
+            this._size++;
         }
 
         public void RemoveHead()
@@ -73,13 +73,13 @@ namespace LinearDS.LinkedLists
                 this._head = this._tail = null;
             else
             {
-                var node = this._head._next;
-                node._previous = null;
-                this._head._next = null;
+                var node = this._head.Next;
+                node.Previous = null;
+                this._head.Next = null;
                 this._head = node;
             }
 
-            this.size--;
+            this._size--;
         }
 
         public void RemoveTail()
@@ -90,21 +90,21 @@ namespace LinearDS.LinkedLists
                 this._head = this._tail = null;
             else
             {
-                var node = this._tail._previous;
-                node._next = null;
-                this._tail._previous = null;
+                var node = this._tail.Previous;
+                node.Next = null;
+                this._tail.Previous = null;
                 this._tail = node;
             }
 
-            this.size--;
+            this._size--;
         }
 
         public int Size()
         {
-            return this.size;
+            return this._size;
         }
 
-        public int IndexOf(T value)
+        private int IndexOf(T value)
         {
             if (this.IsEmpty())
                 throw new InvalidOperationException();
@@ -113,9 +113,9 @@ namespace LinearDS.LinkedLists
             while (node != null)
             {
                 index++;
-                if (node._value.Equals(value))
+                if (node.Value.Equals(value))
                     return index;
-                node = node._next;
+                node = node.Next;
             }
 
             return -1;
@@ -127,11 +127,11 @@ namespace LinearDS.LinkedLists
                 throw new InvalidOperationException();
             var node = this._head;
             var index = 0;
-            var arr = new T[this.size];
+            var arr = new T[this._size];
             while (node != null)
             {
-                arr[index++] = node._value;
-                node = node._next;
+                arr[index++] = node.Value;
+                node = node.Next;
             }
 
             return arr;
@@ -147,21 +147,21 @@ namespace LinearDS.LinkedLists
             if (this.IsEmpty())
                 return;
             var previous = this._head;
-            var current = previous._next;
-            this._head._next = null;
+            var current = previous.Next;
+            this._head.Next = null;
             while (current != null)
             {
-                var next = current._next;
-                previous._previous = current;
-                current._next = previous;
-                current._previous = next;
+                var next = current.Next;
+                previous.Previous = current;
+                current.Next = previous;
+                current.Previous = next;
                 previous = current;
                 current = next;
             }
 
             this._tail = this._head;
             this._head = previous;
-            this._head._previous = null;
+            this._head.Previous = null;
         }
 
         public T FindKthElementFromTail(int k)
@@ -174,18 +174,18 @@ namespace LinearDS.LinkedLists
 
             for (var i = 0; i < k - 1; i++)
             {
-                second = second._next;
+                second = second.Next;
                 if (second == null)
                     throw new InvalidOperationException();
             }
 
             while (second != this._tail)
             {
-                first = first._next;
-                second = second._next;
+                first = first.Next;
+                second = second.Next;
             }
 
-            return first._value;
+            return first.Value;
         }
 
         private bool IsEmpty()

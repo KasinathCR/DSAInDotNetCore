@@ -1,12 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using LinearDS.Queues;
-using MoreLinq.Extensions;
+﻿using LinearDS.HashTables;
 
 namespace LinearDS
 {
     using System;
-    using LinearDS.Stacks;
 
     internal static class Program
     {
@@ -171,13 +167,21 @@ namespace LinearDS
             stackQueue.Dequeue();
             stackQueue.Dequeue();*/
 
-            var queue = new PriorityQueueWithArray(5);
+            /*var queue = new PriorityQueueWithArray(5);
             queue.Enqueue(1);
             queue.Enqueue(3);
             queue.Enqueue(5);
             queue.Enqueue(7);
             queue.Enqueue(2);
-            Console.WriteLine(queue);
+            Console.WriteLine(queue);*/
+
+            #endregion
+
+            #region HashTable
+            
+            const string input = "HHeellloWorld";
+            var result = FirstNonRepeatingCharacterFinder.FindFirstNonRepeatingCharacter(input);
+            Console.WriteLine($"The First Non Repeating Character in {input} is: {result}");
 
             #endregion
         }

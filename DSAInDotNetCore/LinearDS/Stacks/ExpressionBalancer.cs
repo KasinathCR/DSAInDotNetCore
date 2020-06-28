@@ -4,9 +4,9 @@
 
     public class ExpressionBalancer
     {
-        private readonly List<char> leftBrackets = new List<char>() { '(', '[', '<', '{' };
+        private readonly List<char> _leftBrackets = new List<char>() { '(', '[', '<', '{' };
 
-        private readonly List<char> rightBrackets = new List<char>() { ')', ']', '>', '}' };
+        private readonly List<char> _rightBrackets = new List<char>() { ')', ']', '>', '}' };
 
         public bool IsExpressionBalanced(string input)
         {
@@ -18,29 +18,29 @@
                     stack.Push(item);
 
                 if (!this.IsRightBrackets(item)) continue;
-                if (!stack.TryPeek(out var ch))
+                if (!stack.TryPeek(out _))
                     return false;
                 var top = stack.Pop();
                 if (!this.BracketsMatch(top, item))
                     return false;
             }
 
-            return !stack.TryPeek(out var result);
+            return !stack.TryPeek(out _);
         }
 
         private bool IsLeftBrackets(char ch)
         {
-            return this.leftBrackets.Contains(ch);
+            return this._leftBrackets.Contains(ch);
         }
 
         private bool IsRightBrackets(char ch)
         {
-            return this.rightBrackets.Contains(ch);
+            return this._rightBrackets.Contains(ch);
         }
 
         private bool BracketsMatch(char left, char right)
         {
-            return this.leftBrackets.IndexOf(left) == this.rightBrackets.IndexOf(right);
+            return this._leftBrackets.IndexOf(left) == this._rightBrackets.IndexOf(right);
         }
     }
 }
