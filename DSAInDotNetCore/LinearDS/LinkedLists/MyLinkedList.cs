@@ -9,13 +9,13 @@ namespace LinearDS.LinkedLists
 
         private class MyNode<T>
         {
-            public T _value;
+            public T Value;
 
-            public MyNode<T> _address;
+            public MyNode<T> Address;
 
             public MyNode(T value)
             {
-                this._value = value;
+                this.Value = value;
             }
         }
 
@@ -34,7 +34,7 @@ namespace LinearDS.LinkedLists
             if (this.IsEmpty()) this._head = _tail = node;
             else
             {
-                node._address = _head;
+                node.Address = _head;
                 _head = node;
             }
 
@@ -49,7 +49,7 @@ namespace LinearDS.LinkedLists
                 _head = _tail = node;
             else
             {
-                _tail._address = node;
+                _tail.Address = node;
                 _tail = node;
             }
 
@@ -63,11 +63,11 @@ namespace LinearDS.LinkedLists
 
             while (current != null)
             {
-                if (current._value.Equals(value))
+                if (current.Value.Equals(value))
                     return index;
                 else
                 {
-                    current = current._address;
+                    current = current.Address;
                     index++;
                 }
             }
@@ -89,8 +89,8 @@ namespace LinearDS.LinkedLists
             else
             {
                 var current = _head;
-                _head = current._address;
-                current._address = null;
+                _head = current.Address;
+                current.Address = null;
             }
 
             _size--;
@@ -106,7 +106,7 @@ namespace LinearDS.LinkedLists
             {
                 var prev = this.GetPreviousToLast();
                 _tail = prev;
-                prev._address = null;
+                prev.Address = null;
             }
 
             _size--;
@@ -124,8 +124,8 @@ namespace LinearDS.LinkedLists
             var index = 0;
             while (current != null)
             {
-                arr[index++] = current._value;
-                current = current._address;
+                arr[index++] = current.Value;
+                current = current.Address;
             }
 
             return arr;
@@ -137,18 +137,18 @@ namespace LinearDS.LinkedLists
                 return;
 
             var previous = _head;
-            var current = _head._address;
+            var current = _head.Address;
 
             while (current != null)
             {
-                var next = current._address;
-                current._address = previous;
+                var next = current.Address;
+                current.Address = previous;
                 previous = current;
                 current = next;
             }
 
             _tail = _head;
-            _tail._address = null;
+            _tail.Address = null;
             _head = previous;
         }
 
@@ -162,18 +162,18 @@ namespace LinearDS.LinkedLists
 
             for (var i = 0; i < k - 1; i++)
             {
-                second = second._address;
+                second = second.Address;
                 if (second == null)
                     throw new ArgumentOutOfRangeException();
             }
 
             while (second != _tail)
             {
-                first = first._address;
-                second = second._address;
+                first = first.Address;
+                second = second.Address;
             }
 
-            return first._value;
+            return first.Value;
         }
 
         private MyNode<T> GetPreviousToLast()
@@ -182,12 +182,12 @@ namespace LinearDS.LinkedLists
 
             while (current != null)
             {
-                if (current._address == _tail)
+                if (current.Address == _tail)
                 {
                     return current;
                 }
 
-                current = current._address;
+                current = current.Address;
             }
 
             return null;
